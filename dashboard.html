@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manipedicuree</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Poetsen+One&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Roboto', sans-serif;
+      overflow-x: hidden;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      }
+
+    main {
+      flex: 1;
+     }
+
+
+    .container {
+       max-width: 100%;
+     }
+
+    footer {
+      transition: background-color 0.3s ease;
+      text-align: center;
+      padding: 20px 0;
+      color: #d63384;
+    }
+
+    [data-bs-theme="light"] footer,
+    :root:not([data-bs-theme="dark"]) footer {
+      background-color: #ffe6f0;
+    }
+
+    [data-bs-theme="dark"] footer {
+      background-color: #000000;
+    }
+
+    .navbar {
+      background-color: #ffccdd;
+    }
+
+    .navbar-nav {
+      margin: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: #d63384 !important;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #aa0077 !important;
+      text-decoration: underline;
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      color: #d63384;
+    }
+
+  </style>
+</head>
+
+<body>
+
+   <nav class="navbar navbar-expand-lg shadow-sm py-3" style="background: linear-gradient(90deg, #ffe6f0, #ffccdd);">
+  <div class="container position-relative">
+
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold" href="#" style="font-family: 'Poetsen One', cursive; color: #d63384;">
+      <i class="fas fa-hand-sparkles me-1"></i> ManiPedicure
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Centered Menu -->
+    <div class="position-absolute top-50 start-50 translate-middle-x">
+      <ul class="navbar-nav d-flex flex-row text-center gap-3">
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-dark px-3 py-1 rounded-pill hover-glow" href="menu.html">
+            <i class="fas fa-bars me-1"></i> Menu
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-dark px-3 py-1 rounded-pill hover-glow" href="service.html">
+            <i class="fas fa-spa me-1"></i> Service
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-dark px-3 py-1 rounded-pill hover-glow" href="staff.html">
+            <i class="fas fa-user me-1"></i> Staff
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-dark px-3 py-1 rounded-pill hover-glow" href="dashboard.html">
+            <i class="fas fa-chart-line me-1"></i> Dashboard
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Side: Dark Mode + Logout -->
+    <div class="d-flex align-items-center ms-auto gap-3">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="darkModeToggle">
+        <label class="form-check-label text-dark" for="darkModeToggle">Dark Mode</label>
+      </div>
+      <button class="btn btn-sm px-3 rounded-pill text-white shadow-sm" style="background-color: #d63384;" onclick="logoutConfirm()">
+        <i class="fas fa-sign-out-alt me-1"></i> Logout
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+
+  <!-- Welcome Message -->
+<div class="container mt-5 mb-4 text-center">
+  <h2 class="title" style="font-family: 'Poetsen One', cursive; color: #d63384;">
+   ✨ ManiPedicure Beauty Dashboard✨ 
+  </h2>
+</div>
+
+<!-- Staff Highlight -->
+<div class="container overflow-hidden"></div>
+  <div class="row justify-content-center my-5">
+    <div class="col-md-8">
+      <div class="card border-0 shadow-lg p-4 rounded-4">
+        <div class="d-flex align-items-center">
+          <img src="img/tini.png.jpg" width="150" height="150" class="rounded-circle border border-3 border-pink me-4 shadow-sm">
+          <div>
+    </div>
+      <div class="col-md-8">
+        <h2 class="fw-bold text-danger mb-2">🌟 Top Performer of the Month 🌟</h2>
+        <p class="text-muted mb-2">Meet <strong>Allysa</strong> – our most booked nail artist!
+          <i class="fa-solid fa-fire" style="color: orange;"></i>
+        </p>
+        <h4 class="fw-bold text-pink mb-2">💅 Allysa</h4>
+        <p class="mb-2">
+          <i class="fas fa-star text-warning"></i> 4.9/5 Rating &nbsp;|&nbsp;
+          <i class="fas fa-hand-sparkles text-pink"></i> 60+ services this month
+        </p>
+        <p class="fst-italic text-muted">5+ years of excellence in nail artistry & care.</p>
+      </div>
+    </div>
+  </div>
+</div>  
+
+    <!-- Service Overview -->
+     <div class="row g-4 my-5">
+      <div class="col-md-6">
+        <div class="card p-4 shadow-sm">
+          <h6 class="text-muted"><i class="fas fa-spa me-2"></i>Top Services</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">💅 Specialist Manicure - 45 bookings</li>
+            <li class="list-group-item">🦶 Therapist Pedicure - 38 bookings</li>
+            <li class="list-group-item">🎨 Nail Art - 22 bookings</li>
+            <li class="list-group-item">🌿 Beauty Consultation - 15 bookings</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 shadow-sm">
+          <h6 class="text-muted"><i class="fas fa-university me-2"></i>Revenue Summary</h6>
+
+
+          <p>Total Revenue: <strong>RM 5,600</strong></p>
+          <p>Average Booking Value: <strong>RM 50.55</strong></p>
+          <p>Monthly Growth: <span class="text-success"><i class="fas fa-chart-pie me-2"></i>+15%</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="row g-4 dashboard-summary my-5">
+      <div class="col-md-4">
+        <div class="card text-center p-4 shadow-sm">
+          <div class="icon-box mb-2"><i class="fas fa-calendar-check fa-2x text-primary"></i></div>
+          <h5>Total Bookings</h5>
+          <p class="display-6">120</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4 shadow-sm">
+          <div class="icon-box mb-2"><i class="fas fa-clock fa-2x text-warning"></i></div>
+          <h5>Available Slots</h5>
+          <p class="display-6">15</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4 shadow-sm">
+          <div class="icon-box mb-2"><i class="fas fa-star fa-2x text-success"></i></div>
+          <h5>Customer Reviews</h5>
+          <p class="display-6">4.8/5</p>
+        </div>
+      </div>
+    </div>
+
+
+  <!--footer-->
+  <footer class="text-center py-5 mt-5">
+    <p>&copy; 2025 ManiPedicure Beauty. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!--darkmode script-->
+    <script>
+
+       function logoutConfirm() {
+      if (confirm('Are you sure you want to log out?')) {
+        localStorage.removeItem('loggedIn');
+        window.location.href = 'login.html';
+        }
+        }
+
+        function setTheme(theme) {
+        document.documentElement.setAttribute("data-bs-theme",theme);
+        localStorage.setItem("theme",theme);
+        document.getElementById("themeLabel").innerText=
+        theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+        }
+
+        document
+        .getElementById("darkModeToggle")
+        .addEventListener("change", function (event) {
+            if (event.target.checked) {
+                setTheme("dark");  
+                } else {
+                        setTheme ("");
+                }
+                
+            });
+        
+        window.onload= function () {
+            let savedTheme = localStorage.getItem("theme");
+            if (savedTheme) {
+                setTheme(savedTheme);
+                if (savedTheme==="dark") {
+                    document.getElementById("darkModeToggle").checked = true;
+
+                }
+            }
+        };
+
+    </script>
+  </body>
+</html>

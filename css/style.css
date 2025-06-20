@@ -1,0 +1,33 @@
+.title {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  font-style: 35px;
+  text-transform: uppercase;
+  color: transparent;
+  background:linear-gradient(
+    pink, red 
+  );
+  background-size:500 px 100%;
+  background-clip: text;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ .caveat-profilepage {
+    font-family: 'Caveat', cursive;
+  }
+
+  .title footer {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  font-style: 35px;
+  text-transform: uppercase;
+  color: transparent;
+  background:linear-gradient(
+    pink, red 
+  );
+  background-size:500 px 100%;
+  background-clip: text;
+}
